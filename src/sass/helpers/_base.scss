@@ -15,12 +15,22 @@ body {
 	font-size: 18px;
 	color: $white;
 	padding: 26px 65px;
+	@include transition();
 	&-success{
 		background-color: $btn-success;
-		@include transition();
+		
 		&:hover,
 		&:focus {
 			background-color: darken($btn-success, 10%);
+			color: $white;
+		}
+	}
+	&-white{
+		background-color: $white;
+		color: $main_color;
+		&:hover,
+		&:focus {
+			background-color: $main_color;
 			color: $white;
 		}
 	}

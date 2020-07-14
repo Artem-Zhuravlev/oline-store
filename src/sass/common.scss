@@ -309,7 +309,7 @@
 			top: 0;
 			bottom: 0;
 			margin: auto;
-			left: -117px;
+			left: -110px;
 			background: $btn-success;
 			@include transition();
 		}
@@ -360,15 +360,17 @@
 }
 
 .cart-section{
+	padding-top: 47px;
+	&:last-child {
+		padding-bottom: 74px;
+	}
 	.title{
 		margin-right: 29px;
 		font-size: 30px;
 		font-family: $g_600;
 	}
 
-	&.week-offer{
-		padding-top: 47px;
-	}
+	
 	.title-section{
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -395,6 +397,7 @@
 
 .product-thumb{
 	position: relative;
+	margin-bottom: 14px;
 	background-color: $white;
 	border-radius: 5px;
 	padding-top: 19px;
@@ -483,5 +486,43 @@
 			margin-top: -19px;
 			margin-left: -2px;
 		}
+	}
+}
+
+.week-stuff{
+	max-width: 1436px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #e6e6e6;
+	.title-section{
+		padding-top: 42px;
+		padding-bottom: 43px;
+	}
+
+	.title{
+		margin-bottom: 26px;
+		font-size: 47.9px;
+		font-family: $bebas_b;
+		letter-spacing: .1px;
+	}
+
+	.desc{
+		display: block;
+		margin-bottom: 0;
+		font-size: 29.94px;
+		font-family: $g_400;
+		letter-spacing: .1px;
+	}
+	.btn{
+		padding: 19px 42px;
+		font-size: 15.97px;
+	}
+	.pic{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
 	}
 }

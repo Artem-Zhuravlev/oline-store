@@ -17,7 +17,10 @@ html(lang='ru')
 			include ../components/header
 			main
 				include ../components/main-slider
-				include ../components/week-offer
+				.cards-section
+					include ../components/week-offer
+					include ../components/discount-stuff
+				include ../components/week-stuff
 				block mainContent
 			//include ../components/footer
 		script(src="https://code.jquery.com/jquery-3.5.1.min.js")
