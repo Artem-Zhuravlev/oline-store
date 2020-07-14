@@ -1,0 +1,134 @@
+@font-face {
+    font-family:'Bebas Neue Regular';
+    src: url('../fonts/Bebas Neue Regular.eot');
+	src: url('../fonts/Bebas Neue Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Bebas Neue Regular.woff2') format('woff2'),
+		url('../fonts/Bebas Neue Regular.woff') format('woff'),
+		url('../fonts/Bebas Neue Regular.ttf') format('truetype'),
+		url('../fonts/Bebas Neue Regular.otf') format('opentype'),
+		url('../fonts/Bebas Neue Regular.svg#Bebas Neue Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+000D-F6C3;
+}
+
+@font-face {
+    font-family:'Bebas Neue Bold';
+    src: url('../fonts/Bebas Neue Bold.eot');
+	src: url('../fonts/Bebas Neue Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Bebas Neue Bold.woff2') format('woff2'),
+		url('../fonts/Bebas Neue Bold.woff') format('woff'),
+		url('../fonts/Bebas Neue Bold.ttf') format('truetype'),
+		url('../fonts/Bebas Neue Bold.otf') format('opentype'),
+		url('../fonts/Bebas Neue Bold.svg#Bebas Neue Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+000D-2248;
+}
+
+@font-face {
+    font-family:'EuroScript';
+    src: url('../fonts/EuroScript.eot');
+	src: url('../fonts/EuroScript.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/EuroScript.woff2') format('woff2'),
+		url('../fonts/EuroScript.woff') format('woff'),
+		url('../fonts/EuroScript.ttf') format('truetype'),
+		url('../fonts/EuroScript.otf') format('opentype'),
+		url('../fonts/EuroScript.svg#EuroScript') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-F8FF;
+}
+
+@font-face {
+    font-family:'Gilroy-Black';
+    src: url('../fonts/Gilroy-Black.eot');
+	src: url('../fonts/Gilroy-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gilroy-Black.woff2') format('woff2'),
+		url('../fonts/Gilroy-Black.woff') format('woff'),
+		url('../fonts/Gilroy-Black.ttf') format('truetype'),
+		url('../fonts/Gilroy-Black.otf') format('opentype'),
+		url('../fonts/Gilroy-Black.svg#y Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB02;
+}
+
+@font-face {
+    font-family:'Gilroy-Bold';
+    src: url('../fonts/Gilroy-Bold.eot');
+	src: url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+		url('../fonts/Gilroy-Bold.woff') format('woff'),
+		url('../fonts/Gilroy-Bold.ttf') format('truetype'),
+		url('../fonts/Gilroy-Bold.otf') format('opentype'),
+		url('../fonts/Gilroy-Bold.svg#y Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB02;
+}
+
+@font-face {
+    font-family:'Gilroy-Light';
+    src: url('../fonts/Gilroy-Light.eot');
+	src: url('../fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gilroy-Light.woff2') format('woff2'),
+		url('../fonts/Gilroy-Light.woff') format('woff'),
+		url('../fonts/Gilroy-Light.ttf') format('truetype'),
+		url('../fonts/Gilroy-Light.otf') format('opentype'),
+		url('../fonts/Gilroy-Light.svg#y Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB02;
+}
+
+@font-face {
+    font-family:'Gilroy-Medium';
+    src: url('../fonts/Gilroy-Medium.eot');
+	src: url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+		url('../fonts/Gilroy-Medium.woff') format('woff'),
+		url('../fonts/Gilroy-Medium.ttf') format('truetype'),
+		url('../fonts/Gilroy-Medium.otf') format('opentype'),
+		url('../fonts/Gilroy-Medium.svg#y Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB02;
+}
+
+@font-face {
+    font-family:'Gilroy-Regular';
+    src: url('../fonts/Gilroy-Regular.eot');
+	src: url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+		url('../fonts/Gilroy-Regular.woff') format('woff'),
+		url('../fonts/Gilroy-Regular.ttf') format('truetype'),
+		url('../fonts/Gilroy-Regular.otf') format('opentype'),
+		url('../fonts/Gilroy-Regular.svg#Gilroy-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB02;
+}
+
+@font-face {
+    font-family:'Gilroy-SemiBold';
+    src: url('../fonts/Gilroy-SemiBold.eot');
+	src: url('../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gilroy-SemiBold.woff2') format('woff2'),
+		url('../fonts/Gilroy-SemiBold.woff') format('woff'),
+		url('../fonts/Gilroy-SemiBold.ttf') format('truetype'),
+		url('../fonts/Gilroy-SemiBold.otf') format('opentype'),
+		url('../fonts/Gilroy-SemiBold.svg#y SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB02;
+}

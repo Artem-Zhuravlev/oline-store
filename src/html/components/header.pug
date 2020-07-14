@@ -1,0 +1,53 @@
+- const headerList  = ['Оплата','О компании','Доставка','Отзывы','Контакты',];
+- const catalogItems = ['по акции', 'новинки'];
+
+header.header
+	.header-top
+		.container
+			.row.align-items-center
+				.col-lg-5
+					.d-flex
+						a(href="mailto:order@domobenok.ru").header-top-mail order@domobenok.ru
+						.header-top-time режим работы
+							span 9:00-21:00
+				.col-lg-7
+					.d-flex.justify-content-between
+						nav.header-top-nav
+							ul
+								each item in headerList
+									li
+										a(href="#")= item
+
+						.header-top-contacts
+							a(href="tel:+84955553333").phone 8 495 555 33 33
+							a(href="#").recall Обратный звонок
+
+	.header-bottom
+		.container
+			.row.align-items-center
+				.col-lg-9.d-flex.align-items-center
+					a(href="#").header-logo DOMOBEHOK
+						span .ру
+					button.header-catalog-btn 
+						span.burger
+							span.line
+							span.line
+							span.line 
+						span каталог товаров
+						
+
+					nav.header-bottom-catalog
+						ul
+							each item in catalogItems
+								li
+									a(href="#")= item
+		
+				.col-lg-3
+					.header-controlls
+						#search
+							input(type="text" name="search" value placeholder="Поиск")
+							button(type="button" class="search-btn")
+						a(href="#" id="whishlist-total" aria-label="Избранное")
+						#cart
+							button(type="button")
+							ul.dropdown-menu

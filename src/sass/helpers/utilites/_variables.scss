@@ -1,0 +1,89 @@
+@import 'mixins';
+
+/* Colors variables start */
+
+$colors: (
+	success: #A4DE2F,
+	warning: #EE8732,
+	info: #4b8bf5,
+	white: #ffffff,
+	black: #000000
+);
+
+/* Colors variables end */
+
+/* Reboot variables start */
+$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+$font-size-base: 1rem;
+$font-weight-base: normal;
+$line-height-base: 1.35;
+
+$body-color: get($colors, black);
+$body-bg: get($colors, white);
+
+$headings-margin-bottom: 0;
+$paragraph-margin-bottom: 0;
+$label-margin-bottom: 0;
+
+$link-color: get($colors, black);
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+/* Reboot variables end */
+
+/* Grid variables start */
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1200px
+);
+
+$grid-columns: 12;
+$grid-gutter-width: 14px;
+/* Grid variables end */
+
+/* Responsive font-size start */
+$rfs-minimum-font-size: 16px;
+$rfs-font-size-unit: rem;
+$rfs-breakpoint: get($grid-breakpoints, xl);
+$rfs-breakpoint-unit: px;
+$rfs-two-dimensional: false;
+$rfs-factor: 10;
+$rfs-class: false;
+$rfs-rem-value: 16;
+$rfs-safari-iframe-resize-bug-fix: false;
+$enable-responsive-font-sizes: true;
+/* Responsive font-size end */
+
+/*Common variables start */
+
+$base-unit: 1rem;
+
+/*Common variables end */
+$bebas_r: 'Bebas Neue Regular', sans-serif;
+$bebas_b: 'Bebas Neue Bold', sans-serif;
+$euro: 'EuroScript', sans-serif;
+$g_300: 'Gilroy-Light', sans-serif;
+$g_400: 'Gilroy-Regular', sans-serif;
+$g_500: 'Gilroy-Medium', sans-serif;
+$g_600: 'Gilroy-SemiBold', sans-serif;
+$g_700: 'Gilroy-Bold', sans-serif;
+$g_900: 'Gilroy-Black', sans-serif;
+
+$main_color: #101010;
+$main_sz: 15px;
+$main_bg: #fafafa;
+$accent_color: #49b993;
+$white: #fff;
+$black: #000;
+
+$btn-success: #79c0a8
