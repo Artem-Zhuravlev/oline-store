@@ -1,6 +1,22 @@
+-const footerList = ['О компании', 'Вакансии', 'Контакты', 'Сотрудничество', 'Оптовым покупателям', 'Помощь', 'Как оформить заказ', 'Способы оплаты', 'Покупка в кредит', 'Доставка', 'Возврат', 'FAQ'];
+
 footer.footer
 	.container
 		.row
-			.col
-				h2.text-center Footer
+			.col-lg-3
+				.logo-info
+					a(href="#").header-logo
+						!='DOMOBEHOK'
+						span .ру
+					.copyright © 2020 Все права защищены. Интернет-магазин 
+						a(href="#") домовенок
+			.col-lg-4 
+				nav.footer-nav
+					ul
+						each item in footerList
+							li
+								a(href="#")= item
+
+			.col-lg-5 fsdf
+
 
