@@ -1,4 +1,5 @@
 -const footerList = ['О компании', 'Вакансии', 'Контакты', 'Сотрудничество', 'Оптовым покупателям', 'Помощь', 'Как оформить заказ', 'Способы оплаты', 'Покупка в кредит', 'Доставка', 'Возврат', 'FAQ'];
+-const footerSocials = ['fab fa-instagram', 'fab fa-vk', 'fab fa-telegram', 'fab fa-youtube'];
 
 footer.footer
 	.container
@@ -17,6 +18,21 @@ footer.footer
 							li
 								a(href="#")= item
 
-			.col-lg-5 fsdf
-
+			.col-lg-5 
+				.d-flex.align-items-end.justify-content-between
+					nav.footer-socials
+						ul
+							each item in footerSocials
+								li
+									a(href="#")
+										i(aria-hidden="true" class=item)
+					.footer-contacts
+						ul.phones
+							li
+								a(href="tel:+84955553333") 8 495 555 33 33
+							li
+								a(href="tel:+84955553333") 8 495 555 33 33
+						a(href="#" class="callback") обратный звонок
+						.worktime Каждый день с 10:00 до 22:00
+						a(href="#" class="politic") Политика конфиденциальности
 
