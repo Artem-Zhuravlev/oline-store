@@ -1,0 +1,46 @@
+.checkbox-group{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-bottom: 17.2px;
+	input[type="checkbox"]{
+		display: none;
+
+		&:checked + span{
+			&::after{
+				opacity: 1;
+			}
+		}
+	}
+
+	span{
+		position: relative;
+		padding-left: 39px;
+		user-select: none;
+		cursor: pointer;
+		font-size: 16px;
+		font-family: $g_600;
+		&::before{
+			content: "";
+			width: 22px;
+			height: 22px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			margin: auto;
+			background-color: #f3f3f3;
+		}
+
+		&::after{
+			opacity: 0;
+			content: "\f00c";
+			font-family: 'FontAwesome';
+			position: absolute;
+			left: 4px;
+			color: #55786a;
+		}
+	}
+}	

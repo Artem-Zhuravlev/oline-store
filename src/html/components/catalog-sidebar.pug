@@ -1,0 +1,30 @@
+-const checkboxListOne = ['по скидке', 'по акции', 'новинки'];
+-const checkboxListTwo = ['5 plast', 'ARMERO', 'Agrostar', 'Al-ko', 'Aquacraft', 'Archimedes', 'Artevasi', 'Artplast', 'Asia style'];
+-const checkboxListThree = ['Вертикуттер/аэратор', 'Воздуходувка/пылесос', 'Кусторез/секатор', 'Высоторез', 'Измельчитель', 'Бур', 'Дровокол', 'Зернодробилка'];
+
+aside#column-left.catalog-sidebar
+	form
+		h5.title Фильтровать товар
+		.control-group
+			h6.control-group-title цена в рублях
+			.d-flex
+				input(type="text" id="min" value="230" class="minmax")
+				input(type="text" id="max" value="35300" class="minmax")
+			#range-slider
+
+			each item in checkboxListOne
+				label.checkbox-group
+					input(type="checkbox" name="checkbox" value=item)
+					span=item
+		.control-group
+			h6.control-group-title по бренду
+			each item in checkboxListTwo
+				label.checkbox-group
+					input(type="checkbox" name="checkbox" value=item)
+					span=item
+		.control-group
+			h6.control-group-title по типу
+			each item in checkboxListThree
+				label.checkbox-group
+					input(type="checkbox" name="checkbox" value=item)
+					span=item

@@ -14,27 +14,119 @@
 @import 'components/popular-categories';
 @import 'components/subscribe';
 @import 'components/news';
+@import 'components/custom-range-slider';
+@import 'components/amenities';
+@import 'components/inputs';
+@import 'components/breadcrumbs';
 
-.amenities{
-	padding-top: 40px;
-	padding-bottom: 26px;
-	background-color: #d2e9e3;
-	max-width: 1436px;
-	margin: -52px auto 0;
-	border-radius: 6px;
-	.item{
-		text-align: center;
+.catalog-content{
+	position: relative;
+	padding-top: 96px;
+	background-color: #fafafa;
+	z-index: 1;
+	&::before{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		content: "";
+		width: calc(50vw - 615px);
+		background-color: $white;
+		z-index: -1;
 	}
-	.desc{
-		margin: auto;
-		max-width: 160px;
-		font-size: 13px;
-		font-family: $g_600;
-		color: #74958c;
-	}
-	.pic{
-		margin-bottom: 9px;
+
+	
+}
+
+
+.content{
+	padding-top: 24px;
+	padding-left: 22px;
+	padding-bottom: 64px;
+	flex: 1 0;
+
+	h1 {
+		margin-bottom: 7px;
+		font-size: 40.05px;
+		font-family: $g_400;
 	}
 }
+
+.catalog-sidebar {
+	padding-top: 47px;
+	max-width: 282px;
+	width: 100%;
+	background-color: $white;
+	.title{
+		margin-bottom: 21px;
+		font-size: 18px;
+		font-family: $g_700;
+	}
+	.minmax{
+		max-width: 98px;
+		margin-right: 23px;
+		height: 42px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		background-color: #f3f3f3;
+		border: none;
+		font-size: 16px;
+		font-family: $g_600;
+		border-radius: 5px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+
+	.control-group{
+		margin-bottom: 40px;
+	}
+
+	.control-group-title{
+		margin-bottom: 17px;
+		font-size: 16px;
+		font-family: $g_600;
+	}
+}
+.pagination-section{
+	padding-top: 2px;
+	padding-bottom: 53px;
+}
+.pagination{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+	font-size: 14px;
+	font-family: $g_600;
+	.page-item{
+		margin: 0 7px;
+		&.active{
+			font-size: 24px;
+			line-height: 1;
+			color: #55786a;
+		}
+	}
+}
+
+
+.seo-text{
+	background-color: $white;
+	font-size: 14px;
+	text-align: justify;
+	padding: 49px 63px 48px 53px;
+	line-height: 1.57;
+	border-radius: 10px;
+}
+
 
 @import 'components/footer';

@@ -1,0 +1,32 @@
+.breadcrumb{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	color: #49b993;
+	font-size: 12.01px;
+	margin-bottom: 4px;
+	.breadcrumb-item{
+		&.active{
+			color: $main_color;
+		}
+
+		&::before{
+			padding-left: 2px;
+			content: "/";
+			color: #49b993;
+		}
+		&:first-child{
+			&::before{
+				display: none;
+			}
+		}
+	}
+	a{
+		&:hover,
+		&:focus{
+			@include transition();
+		}
+	}
+}

@@ -97,17 +97,39 @@
 
 
 $(document).ready(function () {
-  $('.main-slider').slick({
-    slidesToShow: 1,
-    prevArrow: " \n\t\t\t<button type=\"button\" class=\"slick-prev\">\n\t\t\t\t<img src=\"img/arr-left.png\" alt=\"\" />\n\t\t\t</button>\n\t\t",
-    nextArrow: " \n\t\t\t<button type=\"button\" class=\"slick-next\">\n\t\t\t\t<img src=\"img/arr-right.png\" alt=\"\" />\n\t\t\t</button>\n\t\t"
-  });
-  $('.p-categories-slider').slick({
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    prevArrow: " \n\t\t\t<button type=\"button\" class=\"slick-prev\">\n\t\t\t\t<img src=\"img/a-left.png\" alt=\"\" />\n\t\t\t</button>\n\t\t",
-    nextArrow: " \n\t\t\t<button type=\"button\" class=\"slick-next\">\n\t\t\t\t<img src=\"img/a-right.png\" alt=\"\" />\n\t\t\t</button>\n\t\t"
-  });
+  if ($('.main-slider').length) {
+    $('.main-slider').slick({
+      slidesToShow: 1,
+      prevArrow: " \n\t\t\t\t<button type=\"button\" class=\"slick-prev\">\n\t\t\t\t\t<img src=\"img/arr-left.png\" alt=\"\" />\n\t\t\t\t</button>\n\t\t\t",
+      nextArrow: " \n\t\t\t\t<button type=\"button\" class=\"slick-next\">\n\t\t\t\t\t<img src=\"img/arr-right.png\" alt=\"\" />\n\t\t\t\t</button>\n\t\t\t"
+    });
+  }
+
+  if ($('.p-categories-slider').length) {
+    $('.p-categories-slider').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      prevArrow: " \n\t\t\t\t<button type=\"button\" class=\"slick-prev\">\n\t\t\t\t\t<img src=\"img/a-left.png\" alt=\"\" />\n\t\t\t\t</button>\n\t\t\t",
+      nextArrow: " \n\t\t\t\t<button type=\"button\" class=\"slick-next\">\n\t\t\t\t\t<img src=\"img/a-right.png\" alt=\"\" />\n\t\t\t\t</button>\n\t\t\t"
+    });
+  }
+
+  if ($('#range-slider').length) {
+    $('#range-slider').slider({
+      range: true,
+      min: 0,
+      max: 50000,
+      values: [230, 35300],
+      slide: function slide(event, ui) {
+        $('#min').val(ui.values[0]);
+        $('#max').val(ui.values[1]);
+      }
+    });
+  }
+
+  if ($('#input-sort').length) {
+    $('#input-sort').selectmenu();
+  }
 });
 
 /***/ })
