@@ -1,0 +1,12 @@
+-const amenitiesList = [{pic: 'img/amenity-icon1.png', desc: 'Тысячи брендов и более 300 000 товаров'}, {pic: 'img/amenity-icon2.png', desc: 'Бесплатная доставка при заказе от 3000 руб'}, {pic: 'img/amenity-icon3.png', desc: 'Скидки до 80% и закрытые распродажи'}, {pic: 'img/amenity-icon4.png', desc: 'Оплата картой и наличными'}];
+
+.amenities
+	.container
+		.row.text-center
+			each amenitiesItem in amenitiesList
+				.col-md-3
+					.item
+						.pic
+							img(src=amenitiesItem.pic alt="")
+						.desc=  amenitiesItem.desc
+						

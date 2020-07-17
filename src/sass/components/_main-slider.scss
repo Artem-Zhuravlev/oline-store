@@ -1,0 +1,144 @@
+.main-slider-section{	
+	max-width: 1438px;
+	margin: -50px auto auto;
+	width: 100%;
+	background-color: #d2e9e3;
+}
+
+.main-slider{
+	&-item{
+		padding-bottom: 74px;
+	}
+	z-index: 1;
+	.title{
+		margin-bottom: 16px;
+		font-size: 72px;
+		font-family: $bebas_r;
+		letter-spacing: 2px;
+	}
+	.subtitle{
+		font-family: $g_300;
+		font-size: 24px;
+		letter-spacing: .7px;
+		span{
+			font-size: 48px;
+		}
+	}
+	.title-section{
+		padding-top: 89px;
+		margin-bottom: 39px;
+		
+		padding-left: 56px;
+	}
+	
+	.btn-section{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		.price{
+		    margin-top: -25px;
+		    margin-left: 113px;
+		    font-size: 48px;
+		    font-family: $euro;
+		    color: #79c0a8;
+		    transform: rotate(-6deg);
+			span{
+				font-size: 16px;
+			}
+		}
+	}
+
+	.btn{
+		position: relative;
+		&::before{
+			position: absolute;
+			content: "";
+			width: 117px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			left: -110px;
+			background: $btn-success;
+			@include transition();
+		}
+		&:hover, &:focus{
+			&::before{
+				background-color: darken($btn-success, 10%);
+			}
+		}
+	}
+
+	.pic{
+		margin-left: 82px;
+	}
+
+	.promo{
+		margin-top: -32px;
+		font-size: 14px;
+		font-family: $g_400;
+		color: #a4c3b7;
+		letter-spacing: .4px;
+	}
+
+	.slick-prev,
+	.slick-next{
+		margin-top: -10px;
+		width: 45px;
+		height: 45px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+		&::before{
+			display: none;
+		}
+	}
+
+	.slick-prev{
+		left: 32px;
+	}
+
+	.slick-next{
+		right: 32px;
+	}
+}
+
+.cart-section{
+	padding-top: 47px;
+	&:last-child {
+		padding-bottom: 74px;
+	}
+	.h2{
+		margin-right: 29px;
+	}
+
+	
+	.title-section{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+		margin-bottom: 33px;
+	}
+	.to-catalog{
+		margin-top: 7px;
+		font-family: $g_700;
+		font-size: 16px;
+		color: $btn-success;
+		@include transition();
+		&:hover,
+		&:focus{
+			color: darken($btn-success, 10%);
+		}
+	}
+}

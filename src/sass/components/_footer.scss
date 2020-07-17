@@ -1,0 +1,129 @@
+.footer{
+	padding-top: 34px;
+	background-color: $white;
+	padding-bottom: 42px;
+
+	.logo-info{
+		padding-top: 7px;
+	}
+
+	.copyright{
+		margin-top: 13px;
+		max-width: 188px;
+		font-size: 12px;
+		font-family: $g_500;
+		letter-spacing: .4px;
+		a{
+			font-family: $g_700;
+			@include transition();
+			&:hover,
+			&:focus{
+				color: $accent_color;
+			}
+		}
+	}
+	.footer-nav{
+		margin-left: 22px;
+		margin-right: -13px;
+		ul{
+			column-count: 2;
+			letter-spacing: -.3px;
+		}
+		li{
+			margin-bottom: 4px;
+		}
+		a{
+			@include transition();
+			&:hover,
+			&:focus{
+				color: $accent_color;
+			}
+		}
+	}
+
+	&-socials{
+		margin-left: 9px;
+		margin-bottom: -8px;
+		ul{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+		}
+		li{
+			margin-right: 7px;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+		a{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-ms-align-items: center;
+			align-items: center;
+			justify-content: center;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: #efefef;
+			color: #86cdb3;
+			font-size: 22px;
+			@include transition();
+			&:hover,
+			&:focus{
+				color: #efefef;
+				background-color: #86cdb3;
+			}
+		}
+	}
+	&-contacts{
+		padding-right: 16px;
+		text-align: right;
+		.phones{
+			margin-bottom: -5px;
+			font-family: $g_700;
+			font-size: 17px;
+			letter-spacing: .4px;
+			li{
+				margin-bottom: -2px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+		.callback{
+			display: inline-block;
+			margin-bottom: 14px;
+			font-size: 13px;
+			font-family: $g_400;
+			color: $accent_color;
+			border-bottom: 1px solid $accent_color;
+			letter-spacing: .2px;
+			@include transition();
+			&:hover,
+			&:focus{
+				border-color: transparent;
+			}
+		}
+		.worktime{
+			margin-bottom: 10px;
+			font-size: 13px;
+			font-family: $g_400;
+			letter-spacing: .3px;
+		}
+		.politic{
+			font-size: 12px;
+			border-bottom: 1px solid $main_color;
+			font-family: $g_600;
+			@include transition();
+			&:hover,
+			&:focus{
+				border-color: transparent;
+			}
+		}
+	}
+}
