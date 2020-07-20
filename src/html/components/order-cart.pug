@@ -1,0 +1,36 @@
+.order-cart.container
+	form
+		.row
+			.col-lg-6
+				.order-cart-wrp
+					.title-section
+						h2.title Оформление заказа
+					input(type="text" name="name" placeholder="ваше имя")
+					input(type="tel" name="phone" placeholder="ваш телефон")
+					.radio-field
+						h4.subtitle Способ доставки
+						label.radio-group
+							input(type="radio" name="delivery" value="Самовывоз")
+							span Самовывоз
+						label.radio-group
+							input(type="radio" name="delivery" value="Доставка")
+							span Доставка
+			.col-lg-6
+				textarea(name="order-desc" placeholder="примечание к заказу")
+			.col-12
+				h4.subtitle Способ оплаты
+				label.radio-group
+					input(type="radio" name="payment" value="Яндекс касса")
+					span Яндекс.Касса (банковские карты, электронные деньги и другое)
+				label.radio-group
+					input(type="radio" name="payment" value="Безналичный расчет")
+					span Безналичный расчет
+						span.descr Вы можете оплатить данную покупку с помощью банковского перевода . Счет будет выставлен после оформления заказа. Пожалуйста, укажите ваши банковские реквизиты в примечании к заказу для выставления счета.
+				label.radio-group
+					input(type="radio" name="payment" value="Наличными курьеру")
+					span Наличными курьеру
+				.checkbox-field
+					label.checkbox-group
+						input(type="checkbox" name="checkbox" value="Политика конфиденциальности")
+						span Я согласен(-сна) с политикой конфиденциальности
+				button(type="button" class="btn-primary") Оформить заказ

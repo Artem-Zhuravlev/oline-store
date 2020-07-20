@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Description of the page less than 150 characters">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/common.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-top">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-5">
+                <div class="d-flex"><a class="header-top-mail" href="mailto:order@domobenok.ru">order@domobenok.ru</a>
+                  <div class="header-top-time">режим работы<span>9:00-21:00</span></div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="d-flex justify-content-between">
+                  <nav class="header-top-nav">
+                    <ul>
+                      <li><a href="#">Оплата</a></li>
+                      <li><a href="#">О компании</a></li>
+                      <li><a href="#">Доставка</a></li>
+                      <li><a href="#">Отзывы</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </nav>
+                  <div class="header-top-contacts"><a class="phone" href="tel:+84955553333">8 495 555 33 33</a><a class="recall" href="#">Обратный звонок</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-9 d-flex align-items-center"><a class="header-logo" href="#">DOMOBEHOK<span>.ру</span></a>
+                <button class="header-catalog-btn"> <span class="burger"><span class="line"></span><span class="line"></span><span class="line"> </span></span><span>каталог товаров</span></button>
+                <nav class="header-bottom-catalog">
+                  <ul>
+                    <li><a href="#">по акции</a></li>
+                    <li><a href="#">новинки</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-lg-3">
+                <div class="header-controlls">
+                  <div id="search">
+                    <input type="text" name="search" value placeholder="Поиск">
+                    <button class="search-btn" type="button"></button>
+                  </div><a href="#" id="whishlist-total" aria-label="Избранное"></a>
+                  <div id="cart">
+                    <button type="button"></button>
+                    <ul class="dropdown-menu"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="amenities">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-md-3">
+                <div class="item">
+                  <div class="pic"><img src="img/amenity-icon1.png" alt=""></div>
+                  <div class="desc">Тысячи брендов и более 300 000 товаров</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="item">
+                  <div class="pic"><img src="img/amenity-icon2.png" alt=""></div>
+                  <div class="desc">Бесплатная доставка при заказе от 3000 руб</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="item">
+                  <div class="pic"><img src="img/amenity-icon3.png" alt=""></div>
+                  <div class="desc">Скидки до 80% и закрытые распродажи</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="item">
+                  <div class="pic"><img src="img/amenity-icon4.png" alt=""></div>
+                  <div class="desc">Оплата картой и наличными</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checkout-cart container" id="checkout-cart">
+          <div class="title-section">
+            <h1>Корзина покупок</h1>
+          </div>
+          <form class="checkout-table">
+            <table>
+              <thead>
+                <tr>
+                  <td> </td>
+                  <td class="text-left">наименование товара </td>
+                  <td class="text-center">кол-во</td>
+                  <td class="text-center">цена за шт.</td>
+                  <td class="text-center">всего</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="pic"><a href="#"><img src="img/stuff-pic.jpg" alt=""></a></td>
+                  <td class="name"><a href="#">Газонокосилка бензиновая Ngp t8 самоходная 3300 Вт</a></td>
+                  <td class="amount text-center">
+                    <input class="spinner-input" name="value" value="0">
+                  </td>
+                  <td class="single-price text-center"> 
+                    <div class="price">17500<sub>руб.</sub></div>
+                  </td>
+                  <td class="full-price text-center">
+                    <div class="price">35000<sub>руб.</sub></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+          <div class="d-flex justify-content-end">
+            <div class="result">
+              <div class="cost-item">
+                <div class="price-title">Предварительная стоимость:</div>
+                <div class="price">35000<sub>руб.</sub></div>
+              </div>
+              <div class="cost-item">
+                <div class="price-title">Итого:</div>
+                <div class="price">35000<sub>руб.</sub></div>
+              </div>
+              <div class="btns-wrap"><a class="btn-primary" href="#">Оформить заказ</a><a class="btn-gray" href="#">Продолжить покупки</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="order-cart container">
+          <form>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="order-cart-wrp">
+                  <div class="title-section">
+                    <h2 class="title">Оформление заказа</h2>
+                  </div>
+                  <input type="text" name="name" placeholder="ваше имя">
+                  <input type="tel" name="phone" placeholder="ваш телефон">
+                  <div class="radio-field">
+                    <h4 class="subtitle">Способ доставки</h4>
+                    <label class="radio-group">
+                      <input type="radio" name="delivery" value="Самовывоз"><span>Самовывоз</span>
+                    </label>
+                    <label class="radio-group">
+                      <input type="radio" name="delivery" value="Доставка"><span>Доставка</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <textarea name="order-desc" placeholder="примечание к заказу"></textarea>
+              </div>
+              <div class="col-12">
+                <h4 class="subtitle">Способ оплаты</h4>
+                <label class="radio-group">
+                  <input type="radio" name="payment" value="Яндекс касса"><span>Яндекс.Касса (банковские карты, электронные деньги и другое)</span>
+                </label>
+                <label class="radio-group">
+                  <input type="radio" name="payment" value="Безналичный расчет"><span>Безналичный расчет<span class="descr">Вы можете оплатить данную покупку с помощью банковского перевода . Счет будет выставлен после оформления заказа. Пожалуйста, укажите ваши банковские реквизиты в примечании к заказу для выставления счета.</span></span>
+                </label>
+                <label class="radio-group">
+                  <input type="radio" name="payment" value="Наличными курьеру"><span>Наличными курьеру</span>
+                </label>
+                <div class="checkbox-field">
+                  <label class="checkbox-group">
+                    <input type="checkbox" name="checkbox" value="Политика конфиденциальности"><span>Я согласен(-сна) с политикой конфиденциальности</span>
+                  </label>
+                </div>
+                <button class="btn-primary" type="button">Оформить заказ</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <section class="subscribe">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="text-center title-section">
+                  <h4 class="h2">Подпишитесь на рассылку </h4>
+                  <p>Узнавайте первыми о новинках, акциях и распродажах</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <form class="subscribe-form">
+                  <input type="text" name="email" placeholder="введите ваш e-mail">
+                  <button type="submit">подписаться</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="logo-info"><a class="header-logo" href="#">DOMOBEHOK<span>.ру</span></a>
+                <div class="copyright">© 2020 Все права защищены. Интернет-магазин <a href="#">домовенок</a></div>
+              </div>
+            </div>
+            <div class="col-lg-4"> 
+              <nav class="footer-nav">
+                <ul>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Вакансии</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Сотрудничество</a></li>
+                  <li><a href="#">Оптовым покупателям</a></li>
+                  <li><a href="#">Помощь</a></li>
+                  <li><a href="#">Как оформить заказ</a></li>
+                  <li><a href="#">Способы оплаты</a></li>
+                  <li><a href="#">Покупка в кредит</a></li>
+                  <li><a href="#">Доставка</a></li>
+                  <li><a href="#">Возврат</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-5"> 
+              <div class="d-flex align-items-end justify-content-between">
+                <nav class="footer-socials">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-vk" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                  </ul>
+                </nav>
+                <div class="footer-contacts">
+                  <ul class="phones">
+                    <li><a href="tel:+84955553333">8 495 555 33 33</a></li>
+                    <li><a href="tel:+84955553333">8 495 555 33 33</a></li>
+                  </ul><a class="callback" href="#">обратный звонок</a>
+                  <div class="worktime">Каждый день с 10:00 до 22:00</div><a class="politic" href="#">Политика конфиденциальности</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div id="recall-modal">
+        <div class="title-section">
+          <h5 class="title"></h5>
+        </div>
+        <form>
+          <input type="text" name="name" placeholder="ваше имя">
+          <input type="tel" name="phone" placeholder="ваш телефон">
+        </form>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

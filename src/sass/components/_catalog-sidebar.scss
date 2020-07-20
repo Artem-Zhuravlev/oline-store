@@ -1,0 +1,41 @@
+.catalog-sidebar {
+	padding-top: 47px;
+	max-width: 282px;
+	width: 100%;
+	background-color: $white;
+	.title{
+		margin-bottom: 21px;
+		font-size: 18px;
+		font-family: $g_700;
+	}
+	.minmax{
+		max-width: 98px;
+		margin-right: 23px;
+		height: 42px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		background-color: #f3f3f3;
+		border: none;
+		font-size: 16px;
+		font-family: $g_600;
+		border-radius: 5px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+
+	.control-group{
+		margin-bottom: 40px;
+	}
+
+	.control-group-title{
+		margin-bottom: 17px;
+		font-size: 16px;
+		font-family: $g_600;
+	}
+}

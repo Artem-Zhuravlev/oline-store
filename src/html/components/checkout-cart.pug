@@ -1,0 +1,42 @@
+#checkout-cart.checkout-cart.container
+	.title-section
+		h1 Корзина покупок
+	form.checkout-table
+		table
+			thead
+				tr
+					td 
+					td.text-left наименование товара 
+					td.text-center кол-во
+					td.text-center цена за шт.
+					td.text-center всего
+			tbody
+				tr
+					td.pic
+						a(href="#")
+							img(src="img/stuff-pic.jpg" alt="")
+					td.name
+						a(href="#") Газонокосилка бензиновая Ngp t8 самоходная 3300 Вт
+					td.amount.text-center
+						input(class="spinner-input" name="value" value="0")
+					td.single-price.text-center 
+						.price 17500
+							sub руб.
+					td.full-price.text-center
+						.price 35000
+							sub руб.
+	.d-flex.justify-content-end
+		.result
+			.cost-item
+				.price-title Предварительная стоимость:
+				.price 35000
+					sub руб.
+			.cost-item
+				.price-title Итого:
+				.price 35000
+					sub руб.
+			.btns-wrap
+				a(href="#").btn-primary Оформить заказ
+				a(href="#").btn-gray Продолжить покупки
+
+	

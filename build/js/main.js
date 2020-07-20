@@ -130,6 +130,40 @@ $(document).ready(function () {
   if ($('#input-sort').length) {
     $('#input-sort').selectmenu();
   }
+
+  if ($('.cart-slider').length) {
+    $('.product-slider').slick({
+      slidesToShow: 1,
+      asNavFor: '.product-slider-nav',
+      dots: false,
+      arrows: false,
+      fade: true
+    });
+    $('.product-slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.product-slider',
+      focusOnSelect: true,
+      dots: false,
+      arrows: false
+    });
+  }
+
+  if ($('#product-tabs').length) {
+    $("#product-tabs").tabs({
+      collapsible: true
+    });
+  }
+
+  if ($('.spinner-input').length) {
+    $('.spinner-input').spinner({
+      min: 0,
+      icons: {
+        down: "ui-icon-minus",
+        up: "ui-icon-plus"
+      }
+    });
+  }
 });
 
 /***/ })

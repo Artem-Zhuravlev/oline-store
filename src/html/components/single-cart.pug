@@ -1,0 +1,71 @@
+.single-cart.container#content
+	.cart-slider
+		.product-slider
+			div
+				.item
+					img(src="img/product-pic.jpg" alt="")
+			div
+				.item
+					img(src="img/product-pic.jpg" alt="")
+			div
+				.item
+					img(src="img/product-pic.jpg" alt="")
+
+		.product-slider-nav
+			div
+				.item
+					img(src="img/product-thumb-pic.jpg" alt="")
+			div
+				.item
+					img(src="img/product-thumb-pic1.jpg" alt="")
+			div
+				.item
+					img(src="img/product-thumb-pic2.jpg" alt="")
+
+	.cart-descr
+		span.product-code Код товара: 1002229934
+		h1 Газонокосилка бензиновая Ngp t8 самоходная 3300 Вт
+		span.list-title характеристики
+		ul.product-list
+			li 
+				span.name 
+					span Бренд:
+				span.desc Ngp
+			li 
+				span.name 
+					span Класс устройства:
+				span.desc бытовой
+			li 
+				span.name 
+					span Высота скашивания:
+				span.desc 70
+			li 
+				span.name 
+					span Число оборотов
+				span.desc 3000 об/мин
+		span.price 17 990
+			sub руб.
+		#product.d-flex.product-btns
+			button(type="button" id="button-cart" data-loading-text="Загрузка..." class="btn btn-primary") добавить в корзину
+			button(type="button" id="button-cart-click" class="btn-gray") купить в 1 клик
+		button(type="button" onclick="whislist.add('40')" title data-original-title="Add to whish list" class="favourite-btn") 
+			span добавить в избранное
+
+.tabs-section.container
+	#product-tabs
+		ul
+			li
+				a(href="#tabs-1") Описание
+			li
+				a(href="#tabs-2") Характеристики
+			li
+				a(href="#tabs-3") Отзывы
+		#tabs-1.tab-item
+			p Бензиновая самоходная газонокосилка Ngp t8 обеспечивает фантастические результаты кошения и внешний вид газона. Модель оборудована двигателем ngp t8 ohv 173cc объемом 173 куб.см и мощностью 3300 Вт. Ширина кошения составляет 45,7 см. 
+		#tabs-2.tab-item
+			p Бензиновая самоходная газонокосилка Ngp t8 обеспечивает фантастические результаты кошения и внешний вид газона. Модель оборудована двигателем ngp t8 ohv 173cc объемом 173 куб.см и мощностью 3300 Вт. Ширина кошения составляет 45,7 см. Высота кошения может регулироваться от 25 до 75 мм. 
+		#tabs-3.tab-item
+			p Бензиновая самоходная газонокосилка Ngp t8 обеспечивает фантастические результаты кошения и внешний вид газона. Модель оборудована двигателем ngp t8 ohv 173cc объемом 173 куб.см и мощностью 3300 Вт. Ширина кошения составляет 45,7 см. Высота кошения может регулироваться от 25 до 75 мм. Газонокосилка может эксплуатироваться в режиме кошения со сбором во входящий в комплект травосборник. 
+
+
+
