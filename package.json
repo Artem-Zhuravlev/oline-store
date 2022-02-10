@@ -41,7 +41,7 @@
 		"hard-source-webpack-plugin": "^0.13.1",
 		"imagemin-jpeg-recompress": "^6.0.0",
 		"imagemin-pngquant": "^6.0.0",
-		"node-sass": "^4.14.1",
+		"node-sass": "^7.0.0",
 		"terser-webpack-plugin": "^1.2.3",
 		"webpack": "^4.29.6",
 		"webpack-merge": "^4.2.2",
